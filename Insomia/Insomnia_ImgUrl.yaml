@@ -1,0 +1,197 @@
+type: collection.insomnia.rest/5.0
+schema_version: "5.1"
+name: Evento
+meta:
+  id: wrk_eb45a5be969543fa81ba5bd4346df9f5
+  created: 1787341087556
+  modified: 1787341087556
+  description: ""
+collection:
+  - url: https://localhost:7057/api/Evento
+    name: Cadastrar
+    meta:
+      id: req_f9fdb32b695046b79abbb3428f67853a
+      created: 1787330083248
+      modified: 1787583607703
+      isPrivate: false
+      description: ""
+      sortKey: -1787330083248
+    method: POST
+    body:
+      mimeType: application/json
+      text: >-
+        {
+          "dataEvento": "2026-09-15T19:30:00",
+          "nomeEvento": "Workshop de Tecnologia",
+          "descricao": "Workshop sobre desenvolvimento de sistemas e novas tecnologias.",
+          "imagemUrl": "https://exemplo.com/imagens/workshop.jpg",
+          "idTipoEvento": "00000000-0000-0000-0000-000000000000",
+          "idInstituicao": "39267AFB-9F7D-4282-884D-25FC465B2FEE"
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: https://localhost:7057/api/Evento
+    name: Listar
+    meta:
+      id: req_20f99374276b4972983c820301aa4cf1
+      created: 1787330167227
+      modified: 1787574369515
+      isPrivate: false
+      description: ""
+      sortKey: -1787330083198
+    method: GET
+    body:
+      mimeType: application/json
+      text: ""
+    headers:
+      - name: Content-Type
+        value: application/json
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: https://localhost:7057/api/Evento/78b36634-396a-4384-a83b-f7f352b15b16
+    name: Atualizar
+    meta:
+      id: req_c6842c29529e4839a81f2415b65747ef
+      created: 1787330170636
+      modified: 1787574383446
+      isPrivate: false
+      description: ""
+      sortKey: -1787330083148
+    method: PUT
+    body:
+      mimeType: application/json
+      text: >-
+        {
+              
+          "dataEvento": "2026-09-15T19:30:00",
+          "nomeEvento": "Workshop de Tecnologia2.0",
+          "descricao": "Workshop sobre desenvolvimento de sistemas e novas tecnologias.",
+          "imagemUrl": "https://exemplo.com/imagens/workshop.jpg",
+          "idTipoEvento": "07513F1E-6E21-417C-B929-21BC2DEC19EB",
+          "idInstituicao": "53BE0397-05D0-4ACE-A25A-94DEA0F6E415"
+
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: https://localhost:7057/api/Evento/
+    name: Delete
+    meta:
+      id: req_1f873a791bf0482aba838b4ee9257cd1
+      created: 1787330194768
+      modified: 1787574388802
+      isPrivate: false
+      description: ""
+      sortKey: -1787330083098
+    method: DELETE
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: https://localhost:7057/api/Evento
+    name: New Request
+    meta:
+      id: req_1f2a69b94776450b83ca33c6667c03ec
+      created: 1787583611489
+      modified: 1787591424864
+      isPrivate: false
+      description: ""
+      sortKey: -1787583611489
+    method: POST
+    body:
+      mimeType: multipart/form-data
+      params:
+        - name: Nome
+          value: IA aplicada na Educação
+          description: ""
+          disabled: false
+        - name: Descricao
+          value: Evento que acontecerá na escola sobre IA aplicada na educação
+          description: ""
+          disabled: false
+        - name: DataEvento
+          value: 24/08/2026
+          description: ""
+          disabled: false
+        - name: ArquivoImagem
+          value: ""
+          description: ""
+          disabled: false
+          fileName: C:\Users\46289571850\Downloads\images.jpg
+          type: file
+        - name: IdTipoEvento
+          value: 18B6CC0D-1881-44E7-A662-29EC8BA5765B
+          description: ""
+          disabled: false
+        - name: IdInstituicao
+          value: 39267AFB-9F7D-4282-884D-25FC465B2FEE
+          description: ""
+          disabled: false
+    parameters:
+      - name: NomeEvento
+        value: IA aplicada na Educação
+        description: ""
+        disabled: false
+      - name: Descricao
+        value: Evento que acontecerá na escola sobre IA aplicada na educação
+        description: ""
+        disabled: false
+      - name: DataEvento
+        value: 24/08/2026
+        description: ""
+        disabled: false
+      - name: ImagemUrl
+        value: ""
+        description: ""
+        disabled: false
+    headers:
+      - name: Content-Type
+        value: multipart/form-data
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_9272887c7d5445698e5308f6836ea8a4
+    created: 1787330073431
+    modified: 1787330073431
+environments:
+  name: Base Environment
+  meta:
+    id: env_3117632c5af14dbbb8f7626265160010
+    created: 1787330073429
+    modified: 1787330073429
+    isPrivate: false
