@@ -1,0 +1,50 @@
+type: collection.insomnia.rest/5.0
+schema_version: "5.1"
+name: Login
+meta:
+  id: wrk_64393ab4b9f246bab2f6a7df9b565137
+  created: 1787331539825
+  modified: 1787331539825
+  description: ""
+collection:
+  - url: https://localhost:7209/api/Login
+    name: New Request
+    meta:
+      id: req_c47cd6d255f0490196313117f6efe69c
+      created: 1787332312196
+      modified: 1787333053939
+      isPrivate: false
+      description: ""
+      sortKey: -1787332312196
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"Email": "Leo2@gmail.com",
+        	"Senha": "12345678"
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_c7b63547ddee0ff6e99c7f886b2dac941e03170b
+    created: 1787331539829
+    modified: 1787331539829
+environments:
+  name: Base Environment
+  meta:
+    id: env_c7b63547ddee0ff6e99c7f886b2dac941e03170b
+    created: 1787331539827
+    modified: 1787331539827
+    isPrivate: false

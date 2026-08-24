@@ -1,0 +1,172 @@
+type: collection.insomnia.rest/5.0
+schema_version: "5.1"
+name: EventPlus
+meta:
+  id: wrk_412b9b65776048d58377fe738e9f53b6
+  created: 1786987296094
+  modified: 1786987296094
+  description: ""
+collection:
+  - url: https://localhost:7209/api/TipoUsuario
+    name: Delete
+    meta:
+      id: req_8fdd5dd80e804e1295e3ee5de8dc595b
+      created: 1786987467187
+      modified: 1786992850164
+      isPrivate: false
+      description: ""
+      sortKey: -1786987467187
+    method: DELETE
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: https://localhost:7209/api/Usuariohttps://github.com/leofurlann/EventPlus
+    name: Atualizar
+    meta:
+      id: req_d530fefb8bfc4c9bb2ec580642e8b2b4
+      created: 1786987476659
+      modified: 1786995888241
+      isPrivate: false
+      description: ""
+      sortKey: -1786987476659
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"Nome":"Leoo",
+        	"Email":"Leo@gmail.com",
+        	"Senha": "10101010",
+        "IdUsuario":"f355ab90-39fa-4d7b-b963-234ba110968b"
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: https://localhost:7209/api/Usuario
+    name: Cadastrar
+    meta:
+      id: req_bf6baf5a8b6342cab08855d30f4a5ebc
+      created: 1786987480425
+      modified: 1786987943894
+      isPrivate: false
+      description: ""
+      sortKey: -1786987480425
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"Nome":"Leo",
+        	"Email":"Leo@gmail.com",
+        	"Senha": "10101010",
+        "IdTipoUsuario":"f355ab90-39fa-4d7b-b963-234ba110968b"
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: https://localhost:7209/api/Usuario
+    name: BuscarPorId
+    meta:
+      id: req_5064d0c4be6b4e0d992c2d3c960901de
+      created: 1786987503940
+      modified: 1786993207618
+      isPrivate: false
+      description: ""
+      sortKey: -1786987503940
+    method: GET
+    body:
+      mimeType: application/json
+      text: ""
+    headers:
+      - name: Content-Type
+        value: application/json
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: https://localhost:7209/api/Usuario
+    name: Listar
+    meta:
+      id: req_072fc3a801b34cd0ad8c003c91d5a678
+      created: 1786993131733
+      modified: 1786993205281
+      isPrivate: false
+      description: ""
+      sortKey: -1786993131733
+    method: GET
+    body:
+      mimeType: application/json
+      text: ""
+    headers:
+      - name: Content-Type
+        value: application/json
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: https://localhost:7209/api/Usuario
+    name: BuscarPorEmailESenha
+    meta:
+      id: req_1d09a7380e6248ae9ad4a0728d314523
+      created: 1786993174301
+      modified: 1786993201625
+      isPrivate: false
+      description: ""
+      sortKey: -1786993174301
+    method: GET
+    body:
+      mimeType: application/json
+      text: ""
+    headers:
+      - name: Content-Type
+        value: application/json
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_410503e8571dbfd4ce1bbcf8fe19f8e1d0d99b1f
+    created: 1786987296098
+    modified: 1786987296098
+environments:
+  name: Base Environment
+  meta:
+    id: env_410503e8571dbfd4ce1bbcf8fe19f8e1d0d99b1f
+    created: 1786987296097
+    modified: 1786987296097
+    isPrivate: false
